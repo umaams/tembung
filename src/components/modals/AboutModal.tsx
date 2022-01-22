@@ -69,13 +69,16 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                       >
                         this repository
                       </a>{' '}
-                      . I just modify the codes to change word directories based
+                      .
+                    </p>
+                    <p className="text-sm text-gray-500">
+                      I just modify the codes to change word directories based
                       on KBBI. You can check my modified version on{' '}
                       <a
-                        href="https://www.powerlanguage.co.uk/wordle/"
+                        href="https://github.com/umaams/tembung"
                         className="underline font-bold"
                       >
-                        play the original here
+                        this
                       </a>
                     </p>
                   </div>

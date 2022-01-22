@@ -58,24 +58,28 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                     as="h3"
                     className="text-lg leading-6 font-medium text-gray-900"
                   >
-                    How to play
+                    Cara Bermain
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Guess the WORDLE in 6 tries. After each guess, the color
-                      of the tiles will change to show how close your guess was
-                      to the word.
+                      Tebak kata dalam 6 kali percobaan. Setelah menebak, warna
+                      kotak akan berubah untuk menunjukkan seberapa dekat
+                      tebakanmu dengan kata yang benar.
+                    </p>
+                    <p className="text-sm text-gray-500">
+                      Kata yang dimasukkan harus sesuai dengan standar KBBI
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="W" status="correct" />
+                      <Cell value="K" status="correct" />
                       <Cell value="E" />
+                      <Cell value="C" />
+                      <Cell value="O" />
                       <Cell value="A" />
-                      <Cell value="R" />
-                      <Cell value="Y" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter W is in the word and in the correct spot.
+                      Huruf K ada di dalam kata dan berada pada posisi yang
+                      benar.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -86,18 +90,19 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                       <Cell value="T" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter L is in the word but in the wrong spot.
+                      Huruf L ada di dalam kata tapi berada di posisi yang
+                      salah.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="V" />
+                      <Cell value="B" />
                       <Cell value="A" />
                       <Cell value="G" />
                       <Cell value="U" status="absent" />
-                      <Cell value="E" />
+                      <Cell value="S" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter U is not in the word in any spot.
+                      Huruf U tidak ada dalam kata.
                     </p>
                   </div>
                 </div>
