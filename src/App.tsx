@@ -100,7 +100,7 @@ function App() {
       <Alert message="Not enough letters" isOpen={isNotEnoughLetters} />
       <Alert message="Word not found" isOpen={isWordNotFoundAlertOpen} />
       <Alert
-        message={`You lost, the word was ${solution}`}
+        message={`Anda kalah, kata yang benar adalah ${solution}`}
         isOpen={isGameLost}
       />
       <Alert
